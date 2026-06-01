@@ -43,14 +43,14 @@ static float32_t wHistory[LMS_NUM_TAPS];
 
 static float32_t lmsMu = LMS_MU;
 
-/* Debug/view variables */
+/* Debug variables */
 static float32_t currentNoisySample = 0.0f;
 static float32_t currentNoiseRefSample = 0.0f;
 static float32_t currentEstimatedNoise = 0.0f;
 static float32_t currentErrorSample = 0.0f;
 
 /*******************************************************************************************
-* FFT globals for cleaned RIGHT output verification
+* For cleaned RIGHT output verification
 *******************************************************************************************/
 static q31_t fftInputRight[FFT_LENGTH];
 static q31_t fftResultRight[FFT_LENGTH * 2];
